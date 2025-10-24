@@ -1,0 +1,15 @@
+C:\Users\54535214816\Desktop\BackEndMoura\DesafiosDoDiaEx4\bin\Debug\net9.0\DesafiosDoDiaEx4.exe
+C:\Users\54535214816\Desktop\BackEndMoura\DesafiosDoDiaEx4\bin\Debug\net9.0\DesafiosDoDiaEx4.deps.json
+C:\Users\54535214816\Desktop\BackEndMoura\DesafiosDoDiaEx4\bin\Debug\net9.0\DesafiosDoDiaEx4.runtimeconfig.json
+C:\Users\54535214816\Desktop\BackEndMoura\DesafiosDoDiaEx4\bin\Debug\net9.0\DesafiosDoDiaEx4.dll
+C:\Users\54535214816\Desktop\BackEndMoura\DesafiosDoDiaEx4\bin\Debug\net9.0\DesafiosDoDiaEx4.pdb
+C:\Users\54535214816\Desktop\BackEndMoura\DesafiosDoDiaEx4\obj\Debug\net9.0\DesafiosDoDiaEx4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\54535214816\Desktop\BackEndMoura\DesafiosDoDiaEx4\obj\Debug\net9.0\DesafiosDoDiaEx4.AssemblyInfoInputs.cache
+C:\Users\54535214816\Desktop\BackEndMoura\DesafiosDoDiaEx4\obj\Debug\net9.0\DesafiosDoDiaEx4.AssemblyInfo.cs
+C:\Users\54535214816\Desktop\BackEndMoura\DesafiosDoDiaEx4\obj\Debug\net9.0\DesafiosDoDiaEx4.csproj.CoreCompileInputs.cache
+C:\Users\54535214816\Desktop\BackEndMoura\DesafiosDoDiaEx4\obj\Debug\net9.0\DesafiosDoDiaEx4.sourcelink.json
+C:\Users\54535214816\Desktop\BackEndMoura\DesafiosDoDiaEx4\obj\Debug\net9.0\DesafiosDoDiaEx4.dll
+C:\Users\54535214816\Desktop\BackEndMoura\DesafiosDoDiaEx4\obj\Debug\net9.0\refint\DesafiosDoDiaEx4.dll
+C:\Users\54535214816\Desktop\BackEndMoura\DesafiosDoDiaEx4\obj\Debug\net9.0\DesafiosDoDiaEx4.pdb
+C:\Users\54535214816\Desktop\BackEndMoura\DesafiosDoDiaEx4\obj\Debug\net9.0\DesafiosDoDiaEx4.genruntimeconfig.cache
+C:\Users\54535214816\Desktop\BackEndMoura\DesafiosDoDiaEx4\obj\Debug\net9.0\ref\DesafiosDoDiaEx4.dll
