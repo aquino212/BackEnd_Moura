@@ -20,6 +20,7 @@ do
     switch (opcao)
     {
         case 0:
+            Console.Clear();
             Console.WriteLine("Encerrando...");
             break;
 
@@ -79,35 +80,107 @@ void CadastrarClientes()
 
 void Depositardinheiro()
 {
-    int idcliente = BuscarCliente();
-    if (idcliente == -1)
+    int id = BuscarCliente();
+    if (id == -1)
     {
         return;
     }
     Console.Write("Valor para depósito: ");
     float valor = float.Parse(Console.ReadLine());
-    dinheiro[idcliente] = valor;
+    dinheiro[id] = valor;
     Console.WriteLine($"Depósito de R$ {valor:F2} realizado");
-    
+
     Console.WriteLine("Digite <Enter> para continuar...");
     Console.ReadLine();
 }
 
 void SacarDinheiro()
 {
-  Console.WriteLine("== Função em desenvolvimento ==");
+    int id = BuscarCliente();
+
+    if (id == -1)
+    {
+        return;
+    }
+    
+    Console.Write("Valor para saque: ");
+    float valor = float.Parse(Console.ReadLine());
+
+    if (valor <= 0)
+    {
+     Console.WriteLine("Valor inválido");
+    }
+    else if (valor > dinheiro[id])
+    {
+     Console.WriteLine("Saldo insuficiente");
+    }
+    else
+    {
+     dinheiro[id] -= valor;
+     Console.WriteLine($"Saque de R$ {valor:F2} realizado com sucesso");
+    }
+
+    Console.WriteLine("Digite <Enter> para continuar...");
+    Console.ReadLine(); 
 }
 
 void TransferirDinheiro()
 {
-  
+   Console.WriteLine("== Transferência ==");
+    Console.Write($"Conta de Origem: ");
+    int idOrigem = BuscarCliente();
+
+    if (idOrigem == -1) return;
+    {
+        return;
+    }
+
+
+    Console.Write($"Conta de Destino: ");
+   Console.WriteLine("Selecione o cliente que vai enviar:");
+   int origem = BuscarCliente();
+   if (origem == -1) 
+   {
+     return;
+   }
+
+    Console.WriteLine("Selecione o cliente que vai receber:");
+    int destino = BuscarCliente();
+    if (destino == -1 || destino == origem)
+    {
+     Console.WriteLine("Transferência cancelada");
+     Console.WriteLine("Digite <Enter> para continuar...");
+     Console.ReadLine();
+     return;
+    }
+
+    Console.Write("Valor da transferência: ");
+    float valor = float.Parse(Console.ReadLine());
+
+    if (valor <= 0)
+    {
+        Console.WriteLine("Valor inválido");
+    }
+    else if (valor > dinheiro[origem])
+    {
+        Console.WriteLine("Saldo insuficiente para transferir");
+    }
+    else
+    {
+        dinheiro[origem] -= valor;
+        dinheiro[destino] += valor;
+        Console.WriteLine($"Transferência de R$ {valor:F2} realizada com sucesso");
+    }
+    
+    Console.WriteLine("Digite <Enter> para continuar...");
+    Console.ReadLine();
 }
 
 void ListarClientes()
 {
     for (int t = 0; t < totalclientes; t++)
     {
-        Console.WriteLine($"{t} nome - {nomes[t]} dinheiro - R${dinheiro[t]}");
+     Console.WriteLine($"{t} nome - {nomes[t]} dinheiro - R${dinheiro[t]}");
     }
     Console.WriteLine("Digite <Enter> para continuar...");
     Console.ReadLine();
@@ -124,6 +197,8 @@ int BuscarCliente()
     if (idcliente < 0 || idcliente >= 10)
     {
         Console.WriteLine("Cliente não encontrado");
+        Console.WriteLine("Digite <Enter> para continuar...");
+        Console.ReadLine();
         return -1;
     }
 
