@@ -129,14 +129,7 @@ void TransferirDinheiro()
    Console.WriteLine("== Transferência ==");
     Console.Write($"Conta de Origem: ");
     int idOrigem = BuscarCliente();
-
-    if (idOrigem == -1) return;
-    {
-        return;
-    }
-
-
-    Console.Write($"Conta de Destino: ");
+    
    Console.WriteLine("Selecione o cliente que vai enviar:");
    int origem = BuscarCliente();
    if (origem == -1) 
