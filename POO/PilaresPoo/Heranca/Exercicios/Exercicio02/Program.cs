@@ -1,4 +1,4 @@
-﻿using Exercicio02;
+﻿/* using Exercicio02;
 
 Funcionario funcionario = new Funcionario();
 funcionario.Nome = "Ivan";
@@ -11,5 +11,5 @@ gerente.BonusAd = 11000;
 
 Console.WriteLine("=== Salários ===");
 Console.WriteLine($"{funcionario.Nome}");
-Console.WriteLine($"{gerente.Nome}");
+Console.WriteLine($"{gerente.Nome}"); */
 

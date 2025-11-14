@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PilaresPoo
+namespace Exercicio04
 {
-    public class Heranca
+    public class Aluno : Pessoa
     {
-        
+        public string Curso;
     }
 }
