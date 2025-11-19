@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Threading.Tasks;
+using execicioPolimorfismo;
 
 namespace ExercicioPolimorfismo
 {
-    public class PamentoPix : Pagamento
+    public class PagamentoPix : Pagamento
     {
         private float desconto = 5;
         public float VslorCompra;
